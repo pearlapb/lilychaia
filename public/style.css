@@ -1,0 +1,71 @@
+/*==============================*/
+/*===========OVERALL============*/
+/*==============================*/
+
+h1, h2, h3 {
+    font-family: 'Cookie', cursive;
+}
+
+p, a {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*==============================*/
+/*==============================*/
+/*==============================*/
+
+#homepage-vid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+#homepage-text-overlay {
+    color: #FFF;
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    width: auto;
+    height: auto;
+    z-index: 10000000;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-self: center;
+}
+
+#homepage-text-overlay > h1 {
+    font-size: 170px;
+    margin: 100px 10px 10px 10px;
+}
+
+#homepage-text-overlay > h2 {
+    font-size: 25px;
+    align-self: flex-end;
+    margin: 10px 10px 10px 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#homepage-text-overlay > a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    float: left;
+    align-self: flex-end;
+    margin: 30px 60px 10px 30px;
+    width: 60px;
+    border: 1px solid white;
+    padding: 10px 20px 10px 20px;
+}
+
+#homepage-text-overlay > a:hover {
+    color: black;
+    background-color: white;
+
+}
