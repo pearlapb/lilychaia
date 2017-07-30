@@ -3,11 +3,34 @@
 /*==============================*/
 
 h1, h2, h3 {
-    font-family: 'Cookie', cursive;
+    /*font-family: 'Cookie', cursive;*/
+    font-family: 'Sacramento', cursive;
 }
 
 p, a {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+}
+
+#main-app-component {
+    display: grid;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 10% 100px auto;
+}
+
+.content-div {
+    display: grid;
+    grid-column: 3 / 3 ;
+    grid-row: 3 / 3 ;
+    justify-self: stretch;
+}
+
+.content-div > h3 {
+    text-align: center;
+    font-size: 60px;
+    /*color: #FF699B;*/
+    color: #A50000;
+    margin: 20px 0px 20px 0px;
 }
 
 /*==============================*/
@@ -49,10 +72,11 @@ p, a {
     font-size: 25px;
     align-self: flex-end;
     margin: 10px 10px 10px 30px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Josefin Slab', sans-serif;
 }
 
 #homepage-text-overlay > a {
+    font-size: 17px;
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -68,4 +92,38 @@ p, a {
     color: black;
     background-color: white;
 
+}
+
+/*==============================*/
+/*============NAVBAR============*/
+/*==============================*/
+
+#nav-bar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    /*background-color: #B7DCB1;*/
+    /*background-color: #B1EBEC;*/
+    /*border-bottom: 2px solid #B7DCB1;*/
+    /*border-bottom: 1px solid #000;*/
+    white-space: nowrap;
+    grid-column: 1 / 6;
+    grid-row: 1 / 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-bar > p {
+    width: auto;
+    width: 300px;
+    margin: 10px;
+}
+
+#nav-bar > img {
+    width: 40px;
+    margin: 10px;
+    cursor: pointer;
 }

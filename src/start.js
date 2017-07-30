@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory} from 'react-router';
 
+import App from './Components/App.js'
 import AboutPage from './Components/AboutPage.js';
 import ContactPage from './Components/ContactPage.js';
 import HomePage from './Components/HomePage.js';
@@ -21,29 +22,6 @@ const MainRouter = (
         </Route>
     </Router>
 );
-
-class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { entered: false }
-    }
-
-    changeEnteredState() {
-        this.setState({ entered: true })
-    };
-
-    render() {
-        const children = React.cloneElement(this.props.children, {
-            changeEnteredState: this.changeEnteredState.bind(this)
-        });
-        return (
-            <div>
-                {this.state.entered && <NavBar />}
-                {children}
-            </div>
-        )
-    }
-}
 
 ReactDOM.render(
     MainRouter,

@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 
-class NavBar extends Component {
-  render () {
+function NavBar(props) {
+
     return (
-        <div>NavBar</div>
+        <div id="nav-bar">
+            <p><strong>Livia Papiernik  |  Textiles  |  Embroidery </strong></p>
+            <img id="hamburger-menu" src="assets/hamburgermenu.svg"/>
+        </div>
     )
-  }
 }
 
 export default NavBar;

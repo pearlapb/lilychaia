@@ -4,7 +4,7 @@ import { Router, Route, Link, IndexRoute, hashHistory, browserHistory} from 'rea
 class HomePage extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = { }
     }
   render () {
     return (
