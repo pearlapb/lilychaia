@@ -10,6 +10,7 @@ import NavBar from './Components/NavBar.js';
 import PopupMenu from './Components/PopupMenu.js';
 import PortfolioPage from './Components/PortfolioPage.js';
 import ProjectPage from './Components/ProjectPage.js';
+import PageNotFound from './Components/PageNotFound.js';
 
 const MainRouter = (
     <Router history={browserHistory}>
@@ -18,6 +19,7 @@ const MainRouter = (
             <Route path="/contact" component={ContactPage}/>
             <Route path="/portfolio" component={PortfolioPage}/>
             <Route path="/portfolio/:project" component={ProjectPage}/>
+            <Route path='*' component={PageNotFound}/>
             <IndexRoute component={HomePage}/>
         </Route>
     </Router>

@@ -103,6 +103,7 @@ p, a {
     left: 0;
     width: 100%;
     position: fixed;
+    background-color: #FFF;
     /*background-color: #B7DCB1;*/
     /*background-color: #B1EBEC;*/
     /*border-bottom: 2px solid #B7DCB1;*/
